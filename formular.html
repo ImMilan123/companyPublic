@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="we are a consulting company">
+    <meta name="keywords" content="consulting, HMTL, CSS">
+    <title>IT Company Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="formular.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+<main>
+    <form action="https://gibm.becknet.ch/formular/formular.php" method="POST">
+        <fieldset>
+            <legend>Consulting Service Formular</legend>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Vollständiger Name" autofocus>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="beispiel@domain.com">
+    
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+    
+            <label for="consulting-topic">Beratungsthema:</label>
+            <select id="consulting-topic" name="topic" required>
+                <option value="">Bitte auswählen</option>
+                <option value="business">Geschäftsstrategie</option>
+                <option value="tech">Technologie</option>
+                <option value="marketing">Marketing</option>
+            </select>
+    
+            <label>Kontaktart:</label>
+            <input type="radio" id="contact-email" name="contact_type" value="email" checked><label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact_type" value="phone"><label for="contact-phone">Telefon</label>
+    
+            <label for="additional-services">Zusätzliche Dienste:</label>
+            <input type="checkbox" id="newsletter" name="additional_services" value="newsletter"><label for="newsletter">Newsletter abonnieren</label>
+    
+            <label for="date">Terminwunsch:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="comments">Anmerkungen:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Ihre Anmerkungen..."></textarea>
+    
+            <button type="submit">Senden</button>
+        </fieldset>
+    </form>
+</main>
+    <footer>
+        <p>&copy; 2024 THE Company. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
